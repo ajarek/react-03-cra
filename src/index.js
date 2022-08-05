@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-
+// eslint-disable-next-line react/jsx-key
+const names = [<li>Ala</li>, <li>Ola</li>, <li>Ela</li>]
 const TEXTS = ['Declarative', 'Component-Based', 'Learn Once, Write Anywhere']
 const HTML = '<h1>Hello World</h1>'
 const string1 = 'Hello'
@@ -77,9 +78,14 @@ const firstElement = (
     <div>
       {Object.entries({ a: 1, b: 2, c: 3 })}
     </div>
+    {/* renderowanie tablicy za pomocą JSX */}
+    <div>
+      <ul>
+        {names}
+      </ul>
+    </div>
   </div>
 )
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(firstElement)
 

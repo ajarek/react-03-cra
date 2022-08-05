@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.todo{
+  color: red;
+  text-align: center;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 600px;
+  background-color: #7efff5;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.card.completed {
+  opacity:0.5;
+}
+.card.completed h4 {
+  text-decoration: line-through;
+}

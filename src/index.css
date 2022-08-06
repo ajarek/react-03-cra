@@ -63,3 +63,22 @@ code {
   font-size: 1rem;
   margin-right: 0.5rem;
 }
+.row{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  body{
+    padding: 0.3rem;
+  }
+  .row{
+    width: 40vw;
+  }
+  .btn,.input{
+    padding: 0.4rem;
+    font-size: 0.7rem;
+  }
+}
+  

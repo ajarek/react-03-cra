@@ -12,16 +12,17 @@ code {
     monospace;
 }
 .todo{
-  color: red;
+  color: #475F94;
   text-align: center;
 }
 .card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  padding: 1rem;
+  padding:0 1rem;
   max-width: 600px;
-  background-color: #7efff5;
+  background-color: #FDDC5C;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -32,4 +33,33 @@ code {
 }
 .card.completed h4 {
   text-decoration: line-through;
+}
+.btn{
+  background-color: #475F94;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #475F94;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.input{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #475F94;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
